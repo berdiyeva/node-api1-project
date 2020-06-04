@@ -21,13 +21,12 @@ export default class Users extends Component {
 			.then((users) =>
 				this.setState({ users }, () => console.log("users fetched..", users))
 			);
-    }
-    
-  
+	}
+
 	render() {
 		return (
 			<div>
-				<h2>About Our Users</h2>
+				<h1>About Our Users</h1>
 				<ul>
 					{this.state.users.map((user) => (
 						<li key={user.id}>

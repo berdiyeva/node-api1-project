@@ -6,10 +6,11 @@ export default class Users extends Component {
 		super();
 		this.state = {
 			users: [],
-			// currentUser: {
-			// 	name: "",
-			// 	bio: "",
-			// },
+			user: {
+				id: "",
+				name: "",
+				bio: "",
+			},
 		};
 
 		// this.addUser = this.addUser.bind(this);
@@ -23,6 +24,15 @@ export default class Users extends Component {
 			);
 	}
 
+	addUser = () => {
+		console.log("add function is clicked", this);
+    };
+    
+    deleteUser = () => {
+		console.log("delete function is clicked", this);
+	};
+
+
 	render() {
 		return (
 			<div>
@@ -34,6 +44,8 @@ export default class Users extends Component {
 						</li>
 					))}
 				</ul>
+				<button onClick={(e) => this.addUser()}>Add User</button>
+                <button onClick={(e) => this.deleteUser()}>Delete User</button>
 			</div>
 		);
 	}

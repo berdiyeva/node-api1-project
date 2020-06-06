@@ -1,0 +1,25 @@
+{
+	"name": "api1-project",
+	"version": "1.0.0",
+	"description": "Boilerplate for React and Express",
+	"main": "server.js",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"server": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/berdiyeva/node-api1-project.git"
+	},
+	"author": "Altyn Berdiyeva",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/berdiyeva/node-api1-project/issues"
+	},
+	"homepage": "https://github.com/berdiyeva/node-api1-project#readme"
+}

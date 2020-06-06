@@ -1,13 +1,15 @@
 // This import is pulling from node_modules now
 const express = require("express");
 const db = require("./database.js");
+const cors = require("cors");
 
 const server = express();
 
 server.use(express.json());
+server.use(cors());
 
 //--GET--
-server.get("/users", (req, res) => {
+server.get("/api/users", cors(), (req, res) => {
 	const users = db.getUsers();
 	if (users) {
 		res.json(users);
